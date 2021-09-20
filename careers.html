@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>red|orange</title>
+		
+		<link rel="shortcut icon" href="assets/images/logo/icon.png">
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
+		
+		<!-- styles -->	
+        <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+
+		
+	</head>
+	<body class="loader">
+		<!-- loading start -->
+		<div class="loading">
+		    <img class="logo-loading" src="assets/images/logo/logo-loader.png" alt="logo">
+	    </div><!-- loading end -->
+	    
+		<!-- pointer start -->
+		<div class="pointer" id="pointer">
+			<i class="fas fa-long-arrow-alt-right"></i>
+			<i class="fas fa-search"></i>
+			<i class="fas fa-link"></i>
+		</div><!-- pointer end -->
+		
+		<!-- to-top-btn start -->
+		<a class="to-top-btn pointer-small" href="#up">
+			  <span class="to-top-arrow"></span>		    
+		</a><!-- to-top-btn end -->
+	    
+	    <!-- header start -->
+	    <header class="fixed-header">
+		    <!-- header-flex-box start -->
+			<div class="header-flex-box">
+			    <!-- logo start -->
+				<a href="index.html" class="logo pointer-large animsition-link">
+					<div class="logo-img-box">
+				        <img class="logo-white" src="assets/images/logo/logo-white.png" alt="logo">
+				        <img class="logo-black" src="assets/images/logo/logo-black.png" alt="logo">
+			        </div>
+		        </a><!-- logo end -->
+		        
+				<!-- menu-open start -->	
+				<div class="menu-open pointer-large">
+					<img src="assets/images/logo/ham.png">
+				</div><!-- menu-open end -->
+		    </div><!-- header-flex-box end -->
+		</header><!-- header end -->
+		
+		<!-- nav-container start -->	
+		<nav class="nav-container dark-bg-1">
+			<!-- nav-logo start -->
+			<div class="nav-logo" style="width: 200px;height: 45px;">
+				<img src="assets/images/logo/text-logo-white.png" alt="logo">
+			</div><!-- nav-logo end -->
+			
+			<!-- menu-close -->
+			<div class="menu-close pointer-large"></div>
+			
+			<!-- dropdown-close-box start -->
+			<div class="dropdown-close-box">
+				<div class="dropdown-close pointer-large">
+					<span></span>
+				</div>
+			</div><!-- dropdown-close-box end -->
+			
+			<!-- nav-menu start -->
+			<ul class="nav-menu dark-bg-1">
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change active">
+					<a href="index.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Home">Home</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/home.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change">
+					<a href="about.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="About">About</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/about.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change active dropdown-open">
+					<a class="pointer-large nav-link">
+						<span class="nav-btn" data-text="Services">Services</span>
+					</a>
+					<!-- dropdown start -->
+					<ul class="dropdown">
+						<li class="nav-box">
+							<a href="procurement.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="procurement">procurement</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="base_services.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="base services">base services</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="equipment.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="equipment">equipment</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="hospitality_events.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="hospitality">hospitality</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="global_logistics.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="Logistics">Logistics</span>
+							</a>
+						</li>
+					</ul><!-- dropdown end -->
+					
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/services.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<li class="nav-box nav-bg-change ">
+					<a href="careers.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn active" data-text="Careers">Careers</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/careers.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change">
+					<a href="contact.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Contact">Contact</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/contact.jpg);"></div>
+				</li><!-- nav-box end -->
+			</ul><!-- nav-menu end -->
+		</nav><!-- nav-container end -->
+		<!-- animsition-overlay start -->
+		<main class="animsition-overlay" data-animsition-overlay="true">
+			<!-- page-head start -->
+			<section id="up" class="page-head flex-min-height-box dark-bg-2">
+				<!-- page-head-bg -->
+				<div class="page-head-bg overlay-loading2" style="background-image: url(assets/images/backgrounds/careers.jpg);"></div>
+				
+				<!-- flex-min-height-inner start -->
+	  			<div class="flex-min-height-inner">
+		  			<!-- flex-container start -->
+		  			<div class="container top-bottom-padding-120 flex-container response-999">
+			  			<!-- column start -->
+			  			<div class="six-columns six-offset">
+				  			<div class="content-left-margin-40">
+				  				<h2 class="large-title">
+									<span class="load-title-fill tr-delay03" data-text="Come join the ">Come join the  </span><br>
+									<span class="load-title-fill tr-delay04" data-text="excitement With Us ">excitement With Us </span><br>
+								</h2>
+				  			</div>
+			  			</div><!-- column end -->
+		  			</div><!-- flex-container end -->
+	  			</div><!-- flex-min-height-inner end -->
+	  			
+	  			<!-- scroll-btn start -->
+				<a href="#down" class="scroll-btn pome work">
+					<div class="scroll-arrow-box">
+						<span class="scroll-arrow"></span>
+					</div>
+					<div class="scroll-btn-flip-box">
+						<span class="scroll-btn-flip" data-text="Scroll">Scroll</span>
+					</div>
+				 </a><!-- scroll-btn end -->
+			</section><!-- page-head end -->
+
+			<!-- single-post start -->
+			<div id="down" class="single-post container bottom-padding-30 top-padding-120 light-bg-1" data-midnight="black">
+				<!-- flex-container start -->
+				<div class="flex-container">
+					<div class="twelve-columns bottom-padding-60">
+						<div class="content-left-margin-10">
+							<p class="p-style-medium text-color-1">Red Orange is a global full-service government contracting company. We have international offices held in Australia, Canada, India, Middle East and the United Kingdom. Our headquarters is based at  500 Office Center Drive Ste 400, Fort Washington, PA 19034. Serving the North and South American markets. A majority of our work is done through partnering with commercial companies to provide services and goods to the U.S. Federal government.</p>
+							<p class="p-style-medium text-color-1">Red Orange is an in-house solutions firm for government contracting.Our core competencies include providing goods and services to the Federal Government at the most cost-effective prices and providing unmatched customer service to ensure each request is fulfilled as expected. With that being said, our procurement team handles each contract through the full bidding cycle.</p>
+						</div>
+					</div>
+					<!-- column start -->
+					<div class="twelve-columns">
+						<!-- single-post-content start -->
+						<div class="light-bg-2">					
+							<!-- content-margin-block start -->
+							<div class="content-margin-block">
+								<!-- entry-content start -->
+								<article class="entry-content">
+									<h2 class="medium-title red-color top-margin-30 ">Jobs available</h2>	
+									<br>									
+									<script>
+										function fade(obj){
+											console.log("asd"+obj);
+											obj.classList.toggle('asd');
+										}
+									</script>
+
+									<button id="fade1" onclick="fade(this)" class=" overlay-btn top-bottom-margin-15 pointer-large"> Contracts Coordinator Assistant &nbsp<i class="fa fa-chevron-down"></i></button> 
+									<div id="cont1" style="display: none;" class="content-left-margin-40" >
+										<h2 class="title-style red-color top-margin-30 hide">Job Description</h2>
+										<p class="p-style-medium text-color-1">We are looking for a committed, proactive Contracts Coordinator Assistant to work collaboratively with our Sales team on specific short- and long-term projects. In this role, you will oversee tasks delegated to you by the Manager, coordinate with all necessary vendors and service providers, and ensure that the project is moving forward on time and on budget. You will also assist in client relations by being the main point of contact for questions and issues. The Contracts Coordinator Assistant needs to be highly organized, adaptable, and able to prioritize tasks while working independently.</p>
+										<h2 class="title-style red-color top-margin-30">Job Location</h2>
+										<p class="p-style-medium text-color-1">500 Office Center Drive, Suite 400, Fort Washington, PA 19034</p>
+										<h2 class="title-style red-color top-margin-30">In Person or Remote</h2>
+										<p class="p-style-medium text-color-1">In Person</p>
+										<h2 class="title-style red-color top-margin-30">Preferences</h2>
+										<p class="p-style-medium text-color-1">Bachelors in Business Administration, 2-3 years experience</p>
+										<h2 class="title-style red-color top-margin-30">Salary</h2>
+										<p class="p-style-medium text-color-1">$40k - $50k, plus benefits and incentives</p>
+										<h2 class="title-style red-color top-margin-30">Responsibilities</h2>
+										<div class="content-left-margin-20">
+											<ul class="top-bottom-margin-30 bottom-padding-20 text-color-4">
+												<li>
+													<p class="p-style-medium text-color-1">Serving as the main point of contact for clients and vendors, working to ensure that contract terms are met throughout the duration of the contract</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Reviewing and tracking service contracts and renewals</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Ensuring consistent management of documents, and that they are properly entered in organizational databases and securely maintained</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Resolving client questions, issues, and complaints</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Communicating between clients and internal teams</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Keeping up with profitability statements for projects</p>
+												</li>
+											</ul>
+										</div>
+
+										<h2 class="title-style red-color top-margin-30">Requirements</h2>
+										<div class="content-left-margin-20">
+											<ul class="top-bottom-margin-30 bottom-padding-20 text-color-4">
+												<li>
+													<p class="p-style-medium text-color-1">Able to multitask, prioritize, and manage time efficiently</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Self-motivated and self-directed</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Bachelor’s degree in marketing, business administration, sales, or relevant field</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Basic computer skills, and experience with CRM software and the Microsoft Office Suite</p>
+												</li>
+											</ul>
+										</div>
+
+										<div class="content-left-margin-10 top-bottom-margin-20">
+											<h3 class=" text-color-1">Submit resumes to <a href="mailto://jointheexcitement@redorange.com" class="red-color pointer-large">jointheexcitement@redorange.com</a></h3>
+										</div>
+
+									</div>  <!--cont div ends here -->
+
+									<br>
+									<button id="fade2" class=" overlay-btn top-bottom-margin-15 pointer-large"> Sales Specialist&nbsp<i class="fa fa-chevron-down"></i></button> 
+									<div id="cont2" style="display: none;" class="content-left-margin-40" >
+										<h2 class="title-style red-color top-margin-30 hide">Job Description</h2>
+										<p class="p-style-medium text-color-1">We are searching for a committed, deadline-driven Sales Specialist to join our Sales team. The Sales Specialist will be expected to complete a broad variety of administrative tasks that facilitate the Sales folk’s ability to effectively sell the products and services of the organization. We are looking for someone able to take instruction, but also work unsupervised when required, and be able to spot opportunities that have been overlooked by others.</p>
+										<h2 class="title-style red-color top-margin-30">Job Location</h2>
+										<p class="p-style-medium text-color-1">500 Office Center Drive, Suite 400, Fort Washington, PA 19034</p>
+										<h2 class="title-style red-color top-margin-30">In Person or Remote</h2>
+										<p class="p-style-medium text-color-1">In Person</p>
+										<h2 class="title-style red-color top-margin-30">Preferences</h2>
+										<p class="p-style-medium text-color-1">Bachelors in Business Administration, 2-3 years experience in Waste/Facilities Management Sales</p>
+										<h2 class="title-style red-color top-margin-30">Salary</h2>
+										<p class="p-style-medium text-color-1">$50k - $60k, plus benefits and incentives</p>
+										<h2 class="title-style red-color top-margin-30">Responsibilities</h2>
+										<div class="content-left-margin-20">
+											<ul class="top-bottom-margin-30 bottom-padding-20 text-color-4">
+												<li>
+													<p class="p-style-medium text-color-1">Sourcing for items and services that meet the criteria set forth by the client</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Documenting vendors and quotes into our CRM software</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Negotiating with vendors to meet contract objectives such as quality, quantity, delivery, and cost</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Building a strong professional relationship with vendors</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Putting together quotes to be submitted to the procurement team</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Conducting market research</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Identifying business opportunities</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Generating sales leads</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Producing complex documents, reports, and presentations</p>
+												</li>
+
+											</ul>
+										</div>
+
+										<h2 class="title-style red-color top-margin-30">Requirements</h2>
+										<div class="content-left-margin-20">
+											<ul class="top-bottom-margin-30 bottom-padding-20 text-color-4">
+												<li>
+													<p class="p-style-medium text-color-1"><b>Researcher:</b> Able to look at a need and find a solution to meet the need, and able to review large
+														amounts of information to determine which vendor has the best solution.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Negotiator:</b> Able to obtain relevant knowledge of the subject matter being negotiated, to think
+														clearly and rapidly under pressure, to communicate clearly, and to persuade others.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Great Communicator:</b> This position involves a lot of phone calls as well as emails with potential
+														vendors. We’re looking for someone who communicates clearly and professionally.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Sales Savvy:</b> Understands that to close the deal, we need to negotiate the best price for the best
+														solution.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Detailed:</b> There is a fair amount of number crunching involved in this position in reviewing quotes
+														and when presenting the solution, as mistakes can be costly.</p>
+												</li>
+												
+											</ul>
+										</div>
+
+										<div class="content-left-margin-10 top-bottom-margin-20">
+											<h3 class=" text-color-1">Submit resumes to <a href="mailto://jointheexcitement@redorange.com" class="red-color pointer-large">jointheexcitement@redorange.com</a></h3>
+										</div>
+
+									</div>  <!--cont div ends here -->
+
+									<br>
+									<button id="fade3" class=" overlay-btn top-bottom-margin-15 pointer-large"> Sales Assistant &nbsp<i class="fa fa-chevron-down"></i></button> 
+									<div id="cont3" style="display: none;" class="content-left-margin-40" >
+										<h2 class="title-style red-color top-margin-30 hide">Job Description</h2>
+										<p class="p-style-medium text-color-1">We are searching for a committed, deadline-driven Sales Assistant to join our Sales team. The Sales Assistant will be expected to complete a broad variety of administrative tasks that facilitate the Sales folk’s ability to effectively sell the products and services of the organization. We are looking for someone able to take instruction, but also work unsupervised when required, and be able to spot opportunities that have been overlooked by others.</p>
+										<h2 class="title-style red-color top-margin-30">Job Location</h2>
+										<p class="p-style-medium text-color-1">500 Office Center Drive, Suite 400, Fort Washington, PA 19034</p>
+										<h2 class="title-style red-color top-margin-30">In Person or Remote</h2>
+										<p class="p-style-medium text-color-1">In Person</p>
+										<h2 class="title-style red-color top-margin-30">Compensation</h2>
+										<p class="p-style-medium text-color-1">$20/hour</p>
+										<h2 class="title-style red-color top-margin-30">Responsibilities</h2>
+										<div class="content-left-margin-20">
+											<ul class="top-bottom-margin-30 bottom-padding-20 text-color-4">
+												<li>
+													<p class="p-style-medium text-color-1">Identifying business opportunities and generating sales leads</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Conducting market research</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Assisting with special projects</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Designing and producing complex documents, reports, and presentations</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1">Assisting the Sales department wherever possible</p>
+												</li>
+											</ul>
+										</div>
+
+
+										<h2 class="title-style red-color top-margin-30">Requirements</h2>
+										<div class="content-left-margin-20">
+											<ul class="top-bottom-margin-30 bottom-padding-20 text-color-4">
+												<li>
+													<p class="p-style-medium text-color-1"><b>Researcher:</b> Able to look at a need and find a solution to meet the need, and able to review large
+														amounts of information to determine which vendor has the best solution.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Negotiator:</b> Able to obtain relevant knowledge of the subject matter being negotiated, to think
+														clearly and rapidly under pressure, to communicate clearly, and to persuade others.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Great Communicator:</b> This position involves a lot of phone calls as well as emails with potential
+														vendors. We’re looking for someone who communicates clearly and professionally.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Sales Savvy:</b> Understands that to close the deal, we need to negotiate the best price for the best
+														solution.</p>
+												</li>
+												<li>
+													<p class="p-style-medium text-color-1"><b>Detailed:</b> There is a fair amount of number crunching involved in this position in reviewing quotes
+														and when presenting the solution, as mistakes can be costly.</p>
+												</li>
+												
+											</ul>
+										</div>
+
+										<div class="content-left-margin-10 top-bottom-margin-20">
+											<h3 class=" text-color-1">Submit resumes to <a href="mailto://jointheexcitement@redorange.com" class="red-color pointer-large">jointheexcitement@redorange.com</a></h3>
+										</div>
+
+									</div>  <!--cont div ends here -->
+
+
+								</article><!-- entry-content end -->
+							</div><!-- content-margin-block end -->
+						</div><!-- single-post-content end -->
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+			</div><!-- single-post end -->
+		</main><!-- animsition-overlay end -->
+		
+		<!-- footer start -->
+		<footer class="footer dark-bg-1">
+			<!-- flex-container start -->
+			<div class="flex-container container top-bottom-padding-90">
+				<!-- column start -->
+				<div class="two-columns bottom-padding-60">
+					<div class="content-right-margin-10 footer-center-mobile">
+						<img class="footer-logo" src="assets/images/logo/logo-white.png" alt="logo">
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="two-columns bottom-padding-60">
+					<div class="content-left-right-margin-10">
+						<ul class="footer-menu text-color-4">
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="index.html">Home</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="about.html">About</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="services.html">Services</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color active" href="careers.html">Careers</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="four-columns bottom-padding-60">
+					<div class="content-left-right-margin-10 footer-center-mobile">
+						<ul class="footer-information text-color-4">
+							<li><i class="far fa-envelope"></i><a class="small-title-oswald">Red Orange &nbsp North America,&nbsp inc.</a></li>
+								<li><i class="fas fa-map-marker-alt"></i><a class="small-title-oswald text-height-17">500 &nbsp Office Center Drive,&nbsp STE &nbsp 400,<br><span>Fort Washington,&nbsp PA 19034</span></a></li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="two-columns bottom-padding-60">
+					<div class="content-left-margin-10">
+						<ul class="footer-social">
+							
+							<li>
+								<img class="logo-medium" src="assets/images/logo/sam.jpg" alt="">
+							</li>
+							<li>
+								<img class="logo-medium" src="assets/images/logo/bbb.png" alt="">
+							</li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+					<div class="two-columns bottom-padding-60">
+						<ul class="footer-social">
+							
+							<li>
+								<img class="logo-medium" src="assets/images/logo/gc.jpeg" alt="">
+							</li>
+							<li>
+								<img class="logo-medium" src="assets/images/logo/gsa_logo.jpeg" alt="">
+							</li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="twelve-columns">
+					<p class="p-letter-style text-color-4 footer-copyright">&copy; Copyright 2020 red|orange.</p>
+				</div><!-- column end -->
+			</div><!-- flex-container end -->
+		</footer><!-- footer end -->
+		
+		<!-- scripts --> 
+		
+        <script src="assets/js/plugins.js"></script> 
+        <script src="assets/js/main.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>red|orange</title>
+		
+		<link rel="shortcut icon" href="assets/images/logo/icon.png">
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
+		
+		<!-- styles -->	
+        <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+
+	</head>
+	<body class="loader">
+		<!-- loading start -->
+		<div class="loading">
+		    <img class="logo-loading" src="assets/images/logo/logo-loader.png" alt="logo">
+	    </div><!-- loading end -->
+	    
+		<!-- pointer start -->
+		<div class="pointer" id="pointer">
+			<i class="fas fa-long-arrow-alt-right"></i>
+			<i class="fas fa-search"></i>
+			<i class="fas fa-link"></i>
+		</div><!-- pointer end -->
+	    
+	    <!-- header start -->
+	    <header class="fixed-header">
+		    <!-- header-flex-box start -->
+			<div class="header-flex-box">
+			    <!-- logo start -->
+				<a href="index.html" class="logo pointer-large animsition-link">
+					<div class="logo-img-box">
+				        <img class="logo-white" src="assets/images/logo/logo-white.png" alt="logo">
+				        <img class="logo-black" src="assets/images/logo/logo-black.png" alt="logo">
+			        </div>
+		        </a><!-- logo end -->
+		        
+				<!-- menu-open start -->	
+				<div class="menu-open pointer-large">
+					<img src="assets/images/logo/ham.png">
+				</div><!-- menu-open end -->
+		    </div><!-- header-flex-box end -->
+		</header><!-- header end -->
+		
+		<!-- nav-container start -->	
+		<nav class="nav-container dark-bg-1">
+			<!-- nav-logo start -->
+			<div class="nav-logo" style="width: 200px;height: 45px;">
+				<img src="assets/images/logo/text-logo-white.png" alt="logo">
+			</div><!-- nav-logo end -->
+			
+			<!-- menu-close -->
+			<div class="menu-close pointer-large"></div>
+			
+			<!-- dropdown-close-box start -->
+			<div class="dropdown-close-box">
+				<div class="dropdown-close pointer-large">
+					<span></span>
+				</div>
+			</div><!-- dropdown-close-box end -->
+			
+			<!-- nav-menu start -->
+			<ul class="nav-menu dark-bg-1">
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change active">
+					<a href="index.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Home">Home</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/home.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change">
+					<a href="about.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="About">About</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/about.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change active dropdown-open">
+					<a class="pointer-large nav-link">
+						<span class="nav-btn active" data-text="Services">Services</span>
+					</a>
+					<!-- dropdown start -->
+					<ul class="dropdown">
+						<li class="nav-box">
+							<a href="procurement.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="procurement">procurement</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="base_services.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="base services">base services</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="equipment.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="equipment">equipment</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="hospitality_events.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="hospitality">hospitality</span>
+							</a>
+						</li>
+						<li class="nav-box">
+							<a href="global_logistics.html" class="animsition-link pointer-large">
+								<span class="nav-btn" data-text="Logistics">Logistics</span>
+							</a>
+						</li>
+					</ul><!-- dropdown end -->
+					
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/services.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<li class="nav-box nav-bg-change ">
+					<a href="careers.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Careers">Careers</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/careers.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change">
+					<a href="contact.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Contact">Contact</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/contact.jpg);"></div>
+				</li><!-- nav-box end -->
+			</ul><!-- nav-menu end -->
+		</nav><!-- nav-container end -->
+		<!-- animsition-overlay start -->
+		<main class="animsition-overlay" data-animsition-overlay="true">
+			<!-- portfolio-slider start -->
+			<div class="portfolio-slider">
+				<!-- swiper-wrapper start -->
+		      	<div class="swiper-wrapper">
+			      	<!-- slide start -->
+			        <div class="swiper-slide">
+				        <div class="swiper-image" data-swiper-parallax-y="50%">
+				            <div class="swiper-image-inner" style="background-image: url(assets/images/services/procurement.jpg);">
+					            <div class="portfolio-slider-overlay-box">
+					            	<span class="small-title-oswald text-color-4 portfolio-slider-overlay">Commercial</span>
+					            </div>
+								<div class="portfolio-slider-content container">
+									<div>
+										<h2 class="large-title text-color-4" >
+											<a class="pointer-large animsition-link" href="procurement.html">
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-01">Products</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-02">procurement &</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-03">shipping</span>
+												</span>
+											</a>
+										</h2>
+									</div>
+								</div>
+				            </div>
+				        </div>
+					</div><!-- slide end -->
+			        <!-- slide start -->
+			        <div class="swiper-slide">
+						<div class="swiper-image" data-swiper-parallax-y="50%">
+							<div class="swiper-image-inner" style="background-image: url(assets/images/services/base_service.jpg);">
+					            <div class="portfolio-slider-overlay-box">
+									<span class="small-title-oswald text-color-4 portfolio-slider-overlay">Services</span>
+					            </div>
+								<div class="portfolio-slider-content container">
+									<div>
+										<h2 class="large-title text-color-0">
+											<a class="pointer-large animsition-link" href="base_services.html">
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-01">base</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-02">services</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-03">& Products</span>
+												</span>
+											</a>
+										</h2>
+									</div>
+								</div>
+				            </div>
+				        </div>
+			        </div><!-- slide end -->
+			        <!-- slide start -->
+			        <div class="swiper-slide">
+						<div class="swiper-image" data-swiper-parallax-y="50%">
+							<div class="swiper-image-inner" style="background-image: url(assets/images/services/equipment.jpg);">
+					            <div class="portfolio-slider-overlay-box">
+									<span class="small-title-oswald text-color-4 portfolio-slider-overlay">Commercial</span>
+					            </div>
+								<div class="portfolio-slider-content container">
+									<div>
+										<h2 class="large-title text-color-4">
+											<a class="pointer-large animsition-link" href="equipment.html">
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-01">equipment</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-02">Lease &</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-03">Renting</span>
+												</span>
+											</a>
+										</h2>
+									</div>
+								</div>
+				            </div>
+				        </div>
+			        </div><!-- slide end -->
+			        <!-- slide start -->
+			        <div class="swiper-slide">
+				        <div class="swiper-image" data-swiper-parallax-y="50%">
+							<div class="swiper-image-inner" style="background-image: url(assets/images/services/hospitality_event.jpg);">
+					            <div class="portfolio-slider-overlay-box">
+					            	<span class="small-title-oswald text-color-4 portfolio-slider-overlay">Services</span>
+					            </div>
+								<div class="portfolio-slider-content container">
+									<div>
+										<h2 class="large-title text-color-4">
+											<a class="pointer-large animsition-link" href="hospitality_events.html">
+												
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-01" >hospitality</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-02">& event </span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-03">management</span>
+												</span>
+											</a>
+										</h2>
+									</div>
+								</div>
+				            </div>
+				        </div>
+					</div><!-- slide end -->
+					
+					<!-- slide start -->
+					<div class="swiper-slide">
+						<div class="swiper-image" data-swiper-parallax-y="50%">
+							<div class="swiper-image-inner" style="background-image: url(assets/images/services/global_logistics.jpg);">
+								<div class="portfolio-slider-overlay-box">
+									<span class="small-title-oswald text-color-4 portfolio-slider-overlay">Services</span>
+								</div>
+								<div class="portfolio-slider-content container">
+									<div>
+										<h2 class="large-title text-color-4">
+											<a class="pointer-large animsition-link" href="global_logistics.html">
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-01">Global</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-02">Logistics</span>
+												</span>
+												<span class="hidden-box d-block text-height-10">
+													<span class="portfolio-slider-fade portfolio-slider-tr-03">& Services</span>
+												</span>
+											</a>
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide end -->
+				  </div><!-- swiper-wrapper end -->
+		      	<!-- swiper-pagination -->
+			  	<div class="swiper-pagination"></div>
+			  	<!-- swiper-button-next start -->
+				<div class="swiper-button-next">
+					<div class="slider-arrow-next-box">
+						<span class="slider-arrow-next"></span>
+					</div>
+				</div><!-- swiper-button-next end -->
+				<!-- swiper-button-prev start -->
+				<div class="swiper-button-prev">
+					<div class="slider-arrow-prev-box">
+						<span class="slider-arrow-prev"></span>
+					</div>
+				</div><!-- swiper-button-prev end -->
+		    </div><!-- portfolio-slider end -->
+		</main><!-- animsition-overlay end -->
+		
+		<!-- footer start -->
+		<footer class="footer">
+		</footer><!-- footer end -->
+		
+		<!-- scripts --> 
+        <script src="assets/js/plugins.js"></script> 
+        <script src="assets/js/main.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content=" RedOrange is a globally networked full-service government contractor. Our core competency is providing tailor-made solutions according to our clients’ needs. We empower our teams to focus on serving our customers, making us very agile.">
+
+        <title>red|orange</title>
+
+		<link rel="shortcut icon" href="assets/images/logo/icon.png">
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
+		
+		<!-- styles -->	
+        <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+        
+	</head>
+	<body class="loader">
+		<!-- loading start -->
+		<div class="loading">
+		    <img class="logo-loading" src="assets/images/logo/logo-loader.png" alt="logo">
+	    </div><!-- loading end -->
+	    
+		<!-- pointer start -->
+		<div class="pointer" id="pointer">
+			<i class="fas fa-long-arrow-alt-right"></i>
+			<i class="fas fa-search"></i>
+			<i class="fas fa-link"></i>
+		</div><!-- pointer end -->
+		
+		<!-- to-top-btn start -->
+		<a class="to-top-btn pointer-small" href="#up">
+			  <span class="to-top-arrow"></span>		    
+		</a><!-- to-top-btn end -->
+	    
+	    <!-- header start -->
+	    <header class="fixed-header">
+		    <!-- header-flex-box start -->
+			<div class="header-flex-box">
+			    <!-- logo start -->
+				<a href="index.html" class="logo pointer-large animsition-link">
+					<div class="logo-img-box">
+				        <img class="logo-white" src="assets/images/logo/logo-white.png" alt="logo">
+				        <img class="logo-black" src="assets/images/logo/logo-black.png" alt="logo">
+			        </div>
+		        </a><!-- logo end -->
+		        
+				<!-- menu-open start -->	
+				<div class="menu-open pointer-large">
+					<img src="assets/images/logo/ham.png">
+				</div><!-- menu-open end -->
+		    </div><!-- header-flex-box end -->
+		</header><!-- header end -->
+		
+		<!-- nav-container start -->	
+		<nav class="nav-container dark-bg-1">
+			<!-- nav-logo start -->
+			<div class="nav-logo" style="width: 200px;height: 45px;">
+				<img src="assets/images/logo/text-logo-white.png" alt="logo">
+			</div><!-- nav-logo end -->
+			
+			<!-- menu-close -->
+			<div class="menu-close pointer-large"></div>
+			
+			<!-- dropdown-close-box start -->
+			<div class="dropdown-close-box">
+				<div class="dropdown-close pointer-large">
+					<span></span>
+				</div>
+			</div><!-- dropdown-close-box end -->
+			
+			<!-- nav-menu start -->
+			<ul class="nav-menu dark-bg-1">
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change active">
+					<a href="index.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn active" data-text="Home">Home</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/home.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change">
+					<a href="about.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="About">About</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/about.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change">
+					<a href="services.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Services">Services</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/services.jpg );"></div>
+				</li><!-- nav-box end -->
+
+				<li class="nav-box nav-bg-change ">
+					<a href="careers.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Careers">Careers</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/careers.jpg);"></div>
+				</li><!-- nav-box end -->
+
+				<!-- nav-box start -->
+				<li class="nav-box nav-bg-change">
+					<a href="contact.html" class="animsition-link pointer-large nav-link">
+						<span class="nav-btn" data-text="Contact">Contact</span>
+					</a>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/contact.jpg);"></div>
+				</li><!-- nav-box end -->
+			</ul><!-- nav-menu end -->
+		</nav><!-- nav-container end -->
+
+		<!-- animsition-overlay start -->
+		<main class="animsition-overlay" data-animsition-overlay="true">
+			<!-- home-slider start -->
+			<section class="home-slider" id="up">
+				<!-- swiper-wrapper start -->
+			  	<div class="swiper-wrapper">
+				  	<!-- swiper-slide start -->
+				  	<div class="swiper-slide flex-min-height-box home-slide">
+					  	<!-- slide-bg -->
+				      	<div class="slide-bg overlay-loading2 overlay-dark-bg-1" style="background-image:url(assets/images/backgrounds/home.jpg)"></div>
+				      	<!-- home-slider-content start -->
+					  	<div class="home-slider-content flex-min-height-inner dark-bg-1">
+						  	<!-- flex-container start -->
+					      	<div class="container top-bottom-padding-120 flex-container response-999">
+						      	<!-- column start -->
+						      	<div class="six-columns six-offset">
+							      	<div class="content-left-margin-40">
+									<h3 class="large-title regular-text text-color-4">
+										<span class="slider-overlay2 slider-tr-delay01">Contracting </span><br>
+										<span class="slider-overlay2 slider-tr-delay02">Solutions Across </span><br>
+										<span class="slider-overlay2 slider-tr-delay03">the Government</span><br>
+										<span class="slider-overlay2 slider-tr-delay04">Landscape</span>
+									</h3>								      									  	
+							      	</div>
+						      	</div><!-- column end -->
+					      	</div><!-- flex-container end -->
+				      	</div><!-- home-slider-content end -->
+				    </div><!-- swiper-slide end -->
+				    <!-- swiper-slide start -->
+				    <div class="swiper-slide flex-min-height-box home-slide">
+					<!-- slide-bg -->						  
+					<!-- home-slider-content start -->
+						<div class="home-slider-content flex-min-height-inner light-bg-1">
+						<div class="slide-bg" style="background-image:url(assets/images/backgrounds/home_slider_2.jpg)"></div>
+						<!-- flex-container start -->
+						<div class="container top-bottom-padding-120 flex-container response-999">
+							<!-- column start -->
+							<div class="six-columns six-offset">
+								<div class="content-left-margin-40">
+									<h2 class="large-title regular-text text-color-1">
+										<span class="slider-overlay2 slider-tr-delay01" data-text="Solutions">Solutions</span><br>
+										<span class="slider-overlay2 slider-tr-delay02" data-text="tailored for">tailored for</span><br>
+										<span class="slider-overlay2 slider-tr-delay02" data-text="Your Business">Your Business</span>
+									</h2>
+									
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->  
+						</div><!-- home-slider-content end -->
+				    </div><!-- swiper-slide end -->
+				    <!-- swiper-slide start -->
+				    <div class="swiper-slide flex-min-height-box home-slide red-slide">
+					    <!-- slide-bg -->
+						  <div class="slide-bg" style="background-image:url(assets/images/backgrounds/home_slider_3.jpg)"></div>
+
+						<!-- home-slider-content start -->
+						<div class="home-slider-content flex-min-height-inner dark-bg-2">
+						<!-- flex-container start -->
+						<div class="container top-bottom-padding-120 flex-container response-999">
+							<!-- column start -->
+
+							<div class="six-columns text-color-4">
+								<h2 class="large-title regular-text">
+									<span class="slider-overlay2 slider-tr-delay01" data-text="creative &">creative &</span><br>
+									<span class="slider-overlay2 slider-tr-delay02" data-text="Quality services">Quality services</span>
+								</h2>	
+								<p class="p-style-bold-up text-height-20 d-flex-wrap">
+									<span class="slider-title-fill slider-tr-delay04" data-text="Throughout">throughout &nbsp </span>
+									<span class="slider-title-fill slider-tr-delay05" data-text="The">The &nbsp</span>
+									<span class="slider-title-fill slider-tr-delay06" data-text=" World">World</span>
+								</p>								
+							</div><!-- column end -->
+							
+						</div><!-- flex-container end -->
+					  </div><!-- home-slider-content end -->
+					</div><!-- swiper-slide end -->
+					<!-- swiper-slide start -->
+					<div class="swiper-slide flex-min-height-box home-slide">
+						<!-- slide-bg -->
+						<div class="slide-bg overlay-loading2 overlay-light-bg-1" style="background-image:url(assets/images/backgrounds/home_slider_4.jpg)"></div>
+						<!-- home-slider-content start -->
+						<div class="home-slider-content flex-min-height-inner orange-bg">
+							<!-- flex-container start -->
+							<div class="container top-bottom-padding-120 flex-container response-999">
+								<!-- column start -->
+								<div class="six-columns six-offset">
+									<div class="content-left-margin-40">
+									<h3 class="large-title regular-text text-color-4">
+										<span class="slider-overlay2 slider-tr-delay01">Competitive</span><br>
+										<span class="slider-overlay2 slider-tr-delay02">global procurement</span><br>
+										<span class="slider-overlay2 slider-tr-delay03">& logistics</span>
+									</h3>								      									  	
+									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- home-slider-content end -->
+					</div><!-- swiper-slide end -->
+			  	</div><!-- swiper-wrapper end -->
+			  	
+			  	<!-- swiper-button-next start -->
+			  	<div class="swiper-button-next">
+				  	<div class="slider-arrow-next-box">
+					  	<span class="slider-arrow-next"></span>
+				  	</div>
+			  	</div><!-- swiper-button-next end -->
+			  	<!-- swiper-button-prev start -->
+			  	<div class="swiper-button-prev">
+				  	<div class="slider-arrow-prev-box">
+					  	<span class="slider-arrow-prev"></span>
+				  	</div>
+			  	</div><!-- swiper-button-prev end -->
+			  	
+			  	<!-- swiper-pagination -->
+			  	<div class="swiper-pagination"></div>
+			  	
+			</section><!-- home-slider end -->
+			
+			<!-- flex-min-height-box start -->
+			<section id="down" class="dark-bg-1 flex-min-height-box">
+				<!-- flex-min-height-inner start -->
+				<div class="flex-min-height-inner">
+					<!-- container start -->
+					<div class="container small top-bottom-padding-120">
+						<!-- flex-container start -->
+						<div data-animation-container class="flex-container">
+							<!-- column start -->
+							<div class="twelve-columns text-center">
+								<h2 class="medium-title regular-text text-height-12">
+									<span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="Creating Wealth, ">Creating Wealth, </span><br>
+									<span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim" data-text="Changing Lives,">Changing Lives,</span>
+									<span data-animation-child class="title-fill tr-delay02" data-animation="title-fill-anim" data-text="Transforming Nations">Transforming Nations</span>
+
+								</h2>
+
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="six-columns">
+								<div class="content-right-margin-20">
+									<p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay02" data-animation="fade-anim">RedOrange is a globally networked full-service government contractor. We are an all-inclusive, in-house solutions firm that works predominately with federal government agencies in the United States, United Kingdom and European Union.</p>
+								</div>
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="six-columns">
+								<div class="content-left-margin-20">
+									<p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay03" data-animation="fade-anim">We provide tailor-made solutions according to our clients’ needs. As a flat structured organization, we empower our teams to focus on serving our customers, making us very agile.</p>
+								</div>
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="six-columns">
+								<div class="content-right-margin-20">
+									<p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay02" data-animation="fade-anim">RedOrange maintains a steady presence in and knowledge of local markets to ensure your freight arrives safely and on time. Using reliable partners, we offer you updated information within 24 hours of the entry of events as the shipment progresses and regularly air chartered services guarantee deliveries.</p>
+								</div>
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="six-columns">
+								<div class="content-left-margin-20">
+									<p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay03" data-animation="fade-anim">We have strategic distributorship agreements with leading manufacturers globally. Our large teams of technically qualified buyers across industries are able to access almost any class of product from our network of oﬃces that span almost every continent.</p>
+								</div>
+							</div><!-- column end -->
+							<div class="six-columns">
+								<div class="content-right-margin-20">
+									<p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay02" data-animation="fade-anim">RedOrange was one of the earliest air cargo freighter company to establish a proven freight delivery system into Iraq following the removal of the old Iraqi regime. We specialize in importing products into hostile and remote regions.</p>
+								</div>
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="six-columns">
+								<div class="content-left-margin-20">
+									<p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay03" data-animation="fade-anim">We offer a complete supply chain solution from product procurement to final delivery. The categories listed below are by no means an exhaustive list — just tell us what you need and we’ll deliver it!</p>
+								</div>
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="twelve-columns text-center">
+								<p data-animation-child class="p-letter-style text-color-4 text-height-13 fade-anim-box tr-delay04" data-animation="fade-anim">A Small business with global reach</p>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+					</div><!-- container end -->
+				</div><!-- flex-min-height-inner end -->
+			</section><!-- flex-min-height-box end -->	
+		
+			<!-- section start -->
+			<section class="light-bg-1 bottom-padding-30 top-padding-120" data-midnight="black">
+				<!-- container start -->
+				<div data-animation-container class="container small bottom-padding-60 text-center">
+					<h2 data-animation-child class="large-title text-height-10 text-color-1 overlay-anim-box2" data-animation="overlay-anim2">SERVICES</h2><br>
+					<p data-animation-child class="fade-anim-box tr-delay02 text-color-1 xsmall-title-oswald top-margin-5" data-animation="fade-anim">We offer perfection and precision</p>
+				</div><!-- container end -->
+				
+				<!-- bottom-padding-90 start -->
+				<div class="bottom-padding-90">
+					<!-- portfolio-content start -->
+					<div class="portfolio-content flex-min-height-box">
+						<!-- portfolio-content-inner start -->
+						<div class="portfolio-content-inner flex-min-height-inner">
+							<!-- flex-container start -->
+							<div class="flex-container container small">
+								<!-- column start -->
+								<div data-animation-container class="six-columns">
+									<div class="content-right-margin-40">
+										<span class="title-style red-color overlay-anim-box2" data-animation="overlay-anim2">global</span>
+										<h3 class="title-style text-color-1">
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Procurement</span><br>
+
+										</h3>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">We support federal agencies, embassies, relief organizations and government organizations in achieving their mission by providing a complete supply chain solution through our strategic partnerships, global locations, and exclusive manufacturers’ agreements.</p>
+										
+										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+											<a href="procurement.html" class="arrow-btn pointer-large animsition-link">Read more</a>
+										</div>
+										
+									</div>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="six-columns top-padding-60">
+									<a href="procurement.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/procurement/procurement_main.jpg )"></div>
+									</a>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- portfolio-content-inner end -->
+					</div><!-- portfolio-content end -->
+				</div><!-- bottom-padding-90 end -->
+				
+				<!-- bottom-padding-90 start -->
+				<div class="bottom-padding-90">
+					<!-- portfolio-content start -->
+					<div class="portfolio-content flex-min-height-box">
+						<!-- portfolio-content-inner start -->
+						<div class="portfolio-content-inner flex-min-height-inner">
+							<!-- flex-container start -->
+							<div class="flex-container reverse container small">
+								<!-- column start -->
+								<div class="six-columns top-padding-60">
+									<a href="base_services.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/base_service/base_service_main.jpg )"></div>
+									</a>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div data-animation-container class="six-columns">
+									<div class="content-left-margin-40">
+										<span class="title-style red-color overlay-anim-box2" data-animation="overlay-anim2">Base</span>
+										<h3 class="title-style text-color-1">
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">operating Services</span>
+										</h3>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Our legacy of performing base operation and maintenance services for federal contracts dates back to 2004. We serve federal, state, and local governments as a prime contractor.</p>
+										
+										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+											<a href="base_services.html" class="arrow-btn pointer-large animsition-link">Read more</a>
+										</div>
+										
+									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- portfolio-content-inner end -->
+					</div><!-- portfolio-content end -->
+				</div><!-- bottom-padding-90 end -->
+				
+				<!-- bottom-padding-90 start -->
+				<div class="bottom-padding-90">
+					<!-- portfolio-content start -->
+					<div class="portfolio-content flex-min-height-box">
+						<!-- portfolio-content-inner start -->
+						<div class="portfolio-content-inner flex-min-height-inner">
+							<!-- flex-container start -->
+							<div class="flex-container container small">
+								<!-- column start -->
+								<div data-animation-container class="six-columns">
+									<div class="content-right-margin-40">
+										<span class="title-style red-color overlay-anim-box2" data-animation="overlay-anim2">Heavy</span>
+										<h3 class="title-style text-color-1">
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Equipment services</span><br>
+										</h3>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">We help clients in challenging industries, such as construction, agriculture, mining or forestry, source the equipment they need that works as hard as they do.</p>
+										
+										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+											<a href="equipment.html" class="arrow-btn pointer-large animsition-link">Read more</a>
+										</div>
+										
+									</div>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="six-columns top-padding-60">
+									<a href="equipment.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/equipment/equipment_main.jpg)"></div>
+									</a>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- portfolio-content-inner end -->
+					</div><!-- portfolio-content end -->
+				</div><!-- bottom-padding-90 end -->
+				
+				<!-- bottom-padding-90 start -->
+				<div class="bottom-padding-90">
+					<!-- portfolio-content start -->
+					<div class="portfolio-content flex-min-height-box">
+						<!-- portfolio-content-inner start -->
+						<div class="portfolio-content-inner flex-min-height-inner">
+							<!-- flex-container start -->
+							<div class="flex-container reverse container small">
+								<!-- column start -->
+								<div class="six-columns top-padding-60">
+									<a href="hospitality_events.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/hospitality/hospitality_main.jpg)"></div></a>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div data-animation-container class="six-columns">
+									<div class="content-left-margin-40">
+										<span class="title-style red-color overlay-anim-box2" data-animation="overlay-anim2">Hospitality</span>
+										<h3 class="title-style text-color-1">
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2"> & Events Management</span><br>
+										</h3>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">We procure lodging according to the requests of our government clients. We provide our customers with exceptional service in finding the perfect hotel, meeting space, conference center or apartment to fit their needs.</p>
+										
+										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+											<a href="hospitality_events.html" class="arrow-btn pointer-large animsition-link">Read more</a>
+										</div>
+										
+									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- portfolio-content-inner end -->
+					</div><!-- portfolio-content end -->
+				</div><!-- bottom-padding-90 end -->
+
+				<!-- bottom-padding-90 start -->
+				<div class="bottom-padding-90">
+					<!-- portfolio-content start -->
+					<div class="portfolio-content flex-min-height-box">
+						<!-- portfolio-content-inner start -->
+						<div class="portfolio-content-inner flex-min-height-inner">
+							<!-- flex-container start -->
+							<div class="flex-container container small">
+								<!-- column start -->
+								<div data-animation-container class="six-columns">
+									<div class="content-right-margin-40">
+										<span class="title-style red-color overlay-anim-box2" data-animation="overlay-anim2">Global</span>
+										<h3 class="title-style text-color-1">
+											<span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2"> Logistics & Service</span><br>
+										</h3>
+										<p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">We offer a full range of supply chain services that reduce costs and increase profit potential. We bundle and integrate comprehensive services to meet your unique requirements. Cargo or passenger charters, on-demand or scheduled, every RedOrange-managed project follows a similar process in the planning, pricing, executing and tracking of your charter.</p>
+										
+										<div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+											<a href="global_logistics.html" class="arrow-btn pointer-large animsition-link">Read more</a>
+										</div>
+										
+									</div>
+								</div><!-- column end -->
+								<!-- column start -->
+								<div class="six-columns top-padding-60">
+									<a href="global_logistics.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+										<div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/global_logistic/global_logistic_main.jpg )"></div>
+									</a>
+									
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- portfolio-content-inner end -->
+					</div><!-- portfolio-content end -->
+				</div><!-- bottom-padding-90 end -->
+			
+			<!-- section start -->
+			<section class="dark-bg-2">
+				<!-- container start -->
+				<div class="container small top-bottom-padding-120">
+					<!-- medium-title start -->
+					<h2 data-animation-container class="medium-title">
+						<span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="Fine Folks">Fine Folks</span><br>
+						<span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim" data-text="We serve">We serve</span><br>
+					</h2><!-- medium-title end -->
+					
+					<!-- client-list start -->
+					<ul class="client-list d-flex-wrap top-padding-60">
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/1c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/1.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/2c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/2.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/3c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/3.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/4c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/4.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/5c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/5.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/6c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/6.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/7c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/7.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/8c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/8.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/9c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/9.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/10c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/10.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a  class="pointer-large d-block">
+								<div class="brand-box">
+									<img src="assets/images/clients/11c.png" alt="Brand" class="hover-opac-img">
+									<img src="assets/images/clients/11.png" alt="Brand" class="opac-img">
+								</div>
+							</a>
+						</li>
+						<li class="empty-spot-box">
+							<a data-animation-container  class="pointer-large p-style-bold-up empty-spot d-block">
+								<span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="And">And</span>
+								<span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim" data-text="many">many</span>
+								<span data-animation-child class="title-fill tr-delay02" data-animation="title-fill-anim" data-text="more...">more...</span>
+							</a>
+						</li>
+					</ul><!-- client-list end -->
+				</div><!-- container end -->
+			</section><!-- section end -->
+
+			<section class="contact-form-box flex-min-height-box" style="background-image:url(assets/images/backgrounds/contact_content.jpg)">
+				<div class="bg-overlay"></div>
+				<!-- flex-min-height-inner start -->
+				<div class="flex-min-height-inner">
+					<!-- container start -->
+					<div class="container small top-bottom-padding-120">
+						<h4 class="medium-title-oswald text-color-4 text-center">CONTACT  Red|Orange</h4>
+						<!-- flex-container start -->
+						<form class="flex-container top-padding-90" action="mail_handler.php" method="POST" >
+							<!-- column start -->
+							<div class="four-columns">
+								<div class="content-right-margin-10">
+		                       		<input type="text" placeholder="Enter your name" class="contact-form-control pointer-small" name="first_name">
+							   	</div>
+							</div><!-- column end -->
+							<!-- column start -->
+							<div class="four-columns">
+								<div class="content-left-right-margin-5">
+		                       		<input type="text" placeholder="Enter your last name" class="contact-form-control pointer-small" name="last_name">
+								</div>
+							</div><!-- column end -->
+							<!-- column start -->
+	                        <div class="four-columns">
+		                        <div class="content-left-margin-10">
+		                       		<input type="email" placeholder="Enter your email address" class="contact-form-control pointer-small" name="email">
+			                    </div>
+		                    </div><!-- column end -->
+		                    <!-- column start -->
+							<div class="twelve-columns">
+	                       		<textarea placeholder="Enter your message" class="contact-form-control pointer-small" name="message"></textarea>
+							</div><!-- column end -->
+
+							<!-- column start -->
+	                        <div class="twelve-columns text-center top-padding-90">
+								<button class="border-btn-box pointer-large" type="submit" name="submit">
+									<span class="border-btn-inner">
+								      	<span class="border-btn" data-text="submit" name="submit" value="Submit">submit</span>
+								    </span>
+								</button>
+							</div><!-- column end -->
+						</form><!-- flex-container end -->
+					</div><!-- container end -->
+				</div><!-- flex-min-height-inner end -->
+			</section><!-- contact-form-box end -->
+
+			<!-- light-bg-2 start -->
+			<div class="light-bg-2 top-bottom-padding-120" data-midnight="black">
+				<!-- testimonials-slider start -->
+				<h2 data-animation-container class="medium-title" style="text-align: center;">
+					<span data-animation-child class="title-fill" style="align-content: center;" data-animation="title-fill-anim" data-text=" Testimonials">Testimonials</span><br><br>
+				</h2><!-- medium-title end -->
+				<div class="testimonials-slider container small">
+					<!-- swiper-wrapper start -->
+					<div class="swiper-wrapper">
+						<!-- slide start -->
+						<div class="swiper-slide text-center">
+							<img src="assets/images/testimonials/iap-logo.png" alt="IAP Worldwide Services">
+							<div class="testimonials-content">
+								<p class="text-color-4 p-style-bold">I've spoken to everyone in the market and they all tell me if you need someone you can trust to get things done on the ground in Afghanistan, then you should talk to red|orange</p>
+							</div>
+							<div class="text-color-1 small-title-oswald">
+								Jack Holly,   <span class="text-color-2">Country Manager IAP Worldwide Services</span>
+							</div>
+						</div><!-- slide end -->
+						<!-- slide start -->
+						<div class="swiper-slide text-center">
+							<img src="assets/images/testimonials/usaf.png" alt="author">
+							<div class="testimonials-content">
+								<p class="text-color-4 p-style-bold">Within the last year, the US Military has brought over $2.7 million in equipment for the Commando project form red|orange. Red|orange associates have been easy to contact and quick to take action. They located the quality items needed, offered fair pricing, and arranged delivery in a timely fashion. In the case of supplier error or a lost box, red|orange has quickly moved to take responsibility and solve the problem. Where the rubber meets the road is when a knowledgeable member of their staff has been present during "every" delivery at my camp; regardless the freight company used or timing of the delivery.</p>
+							</div>
+							<div class="text-color-1 small-title-oswald">
+								Todd Cox, <span class="text-color-2"> Major, USAF Deputy Commander </span>
+							</div>
+						</div><!-- slide end -->
+						<!-- slide start -->
+						<div class="swiper-slide text-center">
+							<img src="assets/images/testimonials/un.png" alt="Procurement Officer at United Nations Economic Commission for Africa">
+							<div class="testimonials-content">
+								<p class="text-color-4 p-style-bold">You are always our 1st Reliable supplier.</p>
+							</div>
+							<div class="text-color-1 small-title-oswald">
+								Michael Getachew, <span class="text-color-2">Procurement Officer at United Nations Economic Commission for Africa</span>
+							</div>
+						</div><!-- slide end -->
+						<!-- slide start -->
+						<div class="swiper-slide text-center">
+							<img src="assets/images/testimonials/us_army.png" alt="United States Army">
+							<div class="testimonials-content">
+								<p class="text-color-4 p-style-bold">For exceptional support to the members of the 82nd Combat Aviation Brigade, your tireless dedication and resolve contributed immeasurably to the brigade's ability to fight the global war on terrorism.</p>
+							</div>
+							<div class="text-color-1 small-title-oswald">
+								Michael M. Villaroman, <span class="text-color-2">United States Army</span>
+							</div>
+						</div><!-- slide end -->
+						<!-- slide start -->
+						<div class="swiper-slide text-center">
+							<img src="assets/images/testimonials/usaf.png" alt="United States Air Force">
+							<div class="testimonials-content">
+								<p class="text-color-4 p-style-bold">Our office recently had a $1.9M requirement for over 1,200 laptops and accessories. Red|Orange managed to deliver the entire shipment several weeks ahead of schedule, proving once again their commitment to satisfying their customers even in the most austere environment.</p>
+							</div>
+							<div class="text-color-1 small-title-oswald">
+								Keesa Negaard, <span class="text-color-2">United States Air Force</span>
+							</div>
+						</div><!-- slide end -->
+						<!-- slide start -->
+						<div class="swiper-slide text-center">
+							<img src="assets/images/testimonials/uscc.png" alt="United States Air Force">
+							<div class="testimonials-content">
+								<p class="text-color-4 p-style-bold">red|orange has performed in all cases, excellent and exemplary services throughout these past years on all the NTM-A/C STC-A CJ2 contracts awarded to the company. The CJ2 recommends red|orange company as a premier provider of equipments and services, supporting all aspects of insuring the contracts are met or exceeded in terms of quality, timeliness, maintenance and service. red|orange is a dedicated and professional company, always striving to provide the best support possible and is a valued partner to the US and Coalition efforts in building the Afghan government and nation into a self reliant partner within the world community.</p>
+							</div>
+							<div class="text-color-1 small-title-oswald">
+								Tyrone Hamby, <span class="text-color-2">Resource Manager, NTM-A/C STC-A CJ2</span>
+							</div>
+						</div><!-- slide end -->
+						<div class="swiper-slide text-center">
+							<img src="assets/images/testimonials/USACE.jpeg" alt="USACE Park Ranger">
+							<div class="testimonials-content">
+								<p class="text-color-4 p-style-bold">I want to say that the new bins look fantastic, hats off to RedOrange…</p>
+							</div>
+							<div class="text-color-1 small-title-oswald">
+								David K. Grandy,   <span class="text-color-2"> USACE Park Ranger</span>
+							</div>
+						</div><!-- slide end -->
+					</div><!-- swiper-wrapper end -->
+					
+					<!-- swiper-pagination -->
+					<div class="swiper-pagination"></div>
+				</div><!-- testimonials-slider end -->
+			</div><!-- light-bg-2 end -->
+			
+			<!-- flex-min-height-box start -->
+			
+
+			<!-- section start -->
+			<section class="light-bg-1" data-midnight="black">
+				<!-- container start -->
+				<div class="container bottom-padding-60 top-padding-120">
+					<!-- text-center start -->
+					<div data-animation-container class="text-center">
+						<h2 data-animation-child class="medium-title regular-text text-height-10 text-color-1 overlay-anim-box2" data-animation="overlay-anim2">Why <img class="slider-logo bottom-margin-15" src="assets/images/logo/text-logo-black.png" alt="logo">&nbsp?</h2><br>
+						<p data-animation-child class="fade-anim-box tr-delay02 text-color-1 xsmall-title-oswald top-margin-5" data-animation="fade-anim">We are the Best at what we do</p>
+					</div><!-- text-center end -->
+					
+					<!-- flex-container start -->
+					<div class="flex-container response-999 top-padding-60">
+						<!-- column start -->
+						<div class="three-columns bottom-padding-60">
+							<a data-animation-container  class="content-right-margin-20 hover-box pointer-large d-block light-bg-2">
+								<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 expertise-img-box" data-animation="overlay-anim2">
+									<img class="hover-img" src="assets/images/why_redorange/1.jpg" alt="Digital products">
+								</div>
+								<div class="expertise content-padding-l-r-20 content-padding-bottom-20">
+									<h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">Over 15 Year's Experience In Government Contracting Globally</h3><br>
+									<p data-animation-child class="p-style-small text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">Our buyers have extensive experience in finding the perfect solution for products and services that would be best suited and cost effective for the customer.</p>
+								</div>
+							</a>
+						</div><!-- column end -->
+						<!-- column start -->
+						<div class="three-columns bottom-padding-60">
+							<a data-animation-container  class="content-left-right-margin-20 hover-box pointer-large d-block light-bg-2">
+								<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 expertise-img-box" data-animation="overlay-anim2">
+									<img class="hover-img" src="assets/images/why_redorange/2.jpg" alt="Digital products">
+								</div>
+								<div class="expertise content-padding-l-r-20 content-padding-bottom-20">
+									<h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">Competitive Pricing</h3><br>
+									<p data-animation-child class="p-style-small text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">Experience competitive pricing resulting from strategic supplier agreements and relationships worldwide.</p>
+								</div>
+							</a>
+						</div><!-- column end -->
+						<!-- column start -->
+						<div class="three-columns bottom-padding-60">
+							<a data-animation-container  class="content-left-right-margin-10 hover-box pointer-large d-block light-bg-2">
+								<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 expertise-img-box" data-animation="overlay-anim2">
+									<img class="hover-img" src="assets/images/why_redorange/3.jpg" alt="Digital products">
+								</div>
+								<div class="expertise content-padding-l-r-20 content-padding-bottom-20">
+									<h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">Global Network Of Services & Supply Chain Teams</h3><br>
+									<p data-animation-child class="p-style-small text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">Enjoy sourcing and procurement efficiency with our globally networked service and supply chain teams in each individual timezone.</p>
+								</div>
+							</a>
+						</div><!-- column end -->
+						<!-- column start -->
+						<div class="three-columns bottom-padding-60">
+							<a data-animation-container class="content-left-margin-20 hover-box pointer-large d-block light-bg-2">
+								<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 expertise-img-box" data-animation="overlay-anim2">
+									<img class="hover-img" src="assets/images/why_redorange/4.jpg" alt="Digital products">
+								</div>
+								<div class="expertise content-padding-l-r-20 content-padding-bottom-20">
+									<h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">Responsive Customer Service And Post Order Management</h3><br>
+									<p data-animation-child class="p-style-small text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">We offer around-the-clock global shipment tracking and in-transit visibility.</p>
+								</div>
+							</a>
+						</div><!-- column end -->
+					</div><!-- flex-container end -->
+				</div><!-- container end -->
+			</section><!-- section end -->
+		</main><!-- animsition-overlay end -->
+		
+		<!-- footer start -->
+		<footer class="footer dark-bg-1">
+			<!-- flex-container start -->
+			<div class="flex-container container top-bottom-padding-90">
+				<!-- column start -->
+				<div class="two-columns bottom-padding-60">
+					<div class="content-right-margin-10 footer-center-mobile">
+						<img class="footer-logo" src="assets/images/logo/logo-white.png" alt="logo">
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="two-columns bottom-padding-60">
+					<div class="content-left-right-margin-10">
+						<ul class="footer-menu text-color-4">
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color active" href="index.html">Home</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="about.html">About</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="services.html">Services</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="careers.html">Careers</a></li>
+							<li><a class="pointer-large animsition-link small-title-oswald hover-color" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="four-columns bottom-padding-60">
+					<div class="content-left-right-margin-10 footer-center-mobile">
+						<ul class="footer-information text-color-4">
+							<li><i class="far fa-envelope"></i><a class="small-title-oswald">Red Orange &nbsp North America,&nbsp inc.</a></li>
+							<li><i class="fas fa-map-marker-alt"></i><a class="small-title-oswald text-height-17">500 &nbsp Office Center Drive,&nbsp STE &nbsp 400,<br><span>Fort Washington,&nbsp PA 19034</span></a></li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="two-columns bottom-padding-60">
+					<div class="content-left-margin-10">
+						<ul class="footer-social">
+							
+							<li>
+								<img class="logo-medium" src="assets/images/logo/sam.jpg" alt="">
+							</li>
+							<li>
+								<img class="logo-medium" src="assets/images/logo/bbb.png" alt="">
+							</li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+					<div class="two-columns bottom-padding-60">
+						<ul class="footer-social">
+							
+							<li>
+								<img class="logo-medium" src="assets/images/logo/gc.jpeg" alt="">
+							</li>
+							<li>
+								<img class="logo-medium" src="assets/images/logo/gsa_logo.jpeg" alt="">
+							</li>
+						</ul>
+					</div>
+				</div><!-- column end -->
+				<!-- column start -->
+				<div class="twelve-columns">
+					<p class="p-letter-style text-color-4 footer-copyright">&copy; Copyright 2020 red|orange.</p>
+				</div><!-- column end -->
+			</div><!-- flex-container end -->
+		</footer><!-- footer end -->
+		
+		
+		<!-- scripts --> 
+
+        <script src="assets/js/plugins.js"></script> 
+		<script src="assets/js/main.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171095439-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-171095439-1');
+		</script>
+	</body>
+
+</html>
