@@ -5,3 +5,5 @@ A website for the company redorange.inc. Created with the vanilla stack (HTML,JS
 Created as an intern in 20th Sense bussiness.
 
 The site https://redorange.com/
+
+hosted in blue host
