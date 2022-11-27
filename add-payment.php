@@ -4,7 +4,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <base href="https://www.redorange.com/" />
+    <base href="localhost/" />
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<head>
     <meta charset="utf-8">
@@ -12,10 +12,10 @@
     <title>red|orange</title>		
 		<link rel="shortcut icon" href="assets/images/logo/icon.png">
 
-		<!-- fonts -->
+		<!-- fonts
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
 		
-		<!-- styles -->	
+		 styles -->	
     <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
@@ -55,56 +55,15 @@
 							<!-- column start -->
 							<div class="twelve-columns">
 								<div class="text-center">
-									<img class="top-bottom-padding-20" src="https://www.redorange.com/assets/images/logo/text-logo-white.png" alt="logo" style="width: 200px;">
+									<img class="top-bottom-padding-20" src="assets/images/logo/text-logo-white.png" alt="logo" style="width: 200px;">
 								</div>
 								<div class="text-left">
 									<h2 class="large-title text-height-12 text-center">
 										<span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="Billing">Billing</span><br>
                   					</h2>
 
-                  <!-- <form class="row g-3" method="post" action="https://test.ipg-online.com/connect/gateway/processing">					  
-                            <legend>Test Payment Request Details</legend>
-                            <div class="col-md-6">
-                                <label for="storename" class="form-label">Store ID:</label>
-                                <input type="text" name="storename" value="334326945881" class="form-control" readonly="readonly" />
-							</div>
-                            <div class="col-md-6">
-                                <label for="timezone" class="form-label">Timezone:</label>
-                                <input type="text" name="timezone" value="America/Los_Angeles" class="form-control" readonly="readonly"/>
-								</div>
-                            <div class="col-md-6">
-                                <label for="transactiontype" class="form-label">Transaction Type:</label>
-                                <input type="text" name="txntype" value="sale" class="form-control" readonly="readonly" />
-								</div>
-                            <div class="col-md-6">
-                                <label for="chargetotal" class="form-label">Transaction Amount:</label>
-                                <input type="text" name="chargetotal" value="512.00" class="form-control" readonly="readonly" />
-								</div>
-                            <div class="col-md-6">
-                                <label for="currency" class="form-label">Currency (see ISO4217):</label>
-                                <input type="text" name="currency" value="840" class="form-control"  readonly="readonly" />
-								</div>
-                            <div class="col-md-6">
-                                <label for="txndatetime" class="form-label">Transaction DateTime:</label>
-                                <input type="text" name="txndatetime" class="form-control" value="<?php echo getDateTime(); ?>"/>
-								</div>
-                            <div class="col-md-6">
-                                <label for="hashExtended" class="form-label">Hash Extended:</label>
-                                <input type="text" name="hashExtended" class="form-control" value="<?php echo createExtendedHash('512.00', '840'); ?>"  readonly="readonly" />
-								</div>
-                            <div class="col-md-6">
-                                <label for="hashExtended" class="form-label">Hash Algorithm :</label>
-                                <input type="text" name="hash_algorithm" class="form-control" value="HMACSHA256" readonly="readonly" />
-								</div>
-                            <div class="col-md-6">
-                                <label for="hashExtended" class="form-label">Checkout option :</label>
-                                <input type="text" name="checkoutoption" class="form-control" value="combinedpage" readonly="readonly" />
-								</div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-success btn-flat btn-block">Submit Details</button>
-							</div>
-                    </form> -->
-                    <?php
+                
+                    <!-- <?php
 
                     function getDateTime() {
                         return date("Y:m:d-H:i:s");
@@ -126,9 +85,9 @@
                     return $hash;
                     }
 
-                    ?>
+                    
 				<hr/>
-						<?php 
+					
 							$database = new DB();
 							$query = "SELECT * FROM payment_link WHERE id = '3'";
 							$results = $database->get_results( $query );
@@ -138,9 +97,9 @@
 								$purchase_order = $row['purchase_order'];
 								$amount = $row['amount'];
 							}
-							// $payment_id = $_GET['payment_id'];
-						?>
-						<form class="row g-3" id="" method="post" action="https://20thsensebusiness.com/redorange/payment-processing.php">
+							$payment_id = $_GET['payment_id'];
+						?> -->
+						<form class="row g-3" id="" method="post" action="payment-processing.php">
 								<input type="hidden" class="form-control" id="paymentid" value="">
 								<div class="col-md-12">
 									<label for="inputEmail4" class="form-label">Cardholder Name: (Please Print)</label>

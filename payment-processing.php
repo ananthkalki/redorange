@@ -64,22 +64,12 @@
                                     <div class="col-md-12">                  
                                     <?php
 
-										// $apiKey = "y6pWAJNyJyjGv66IsVuWnklkKUPFbb0a";
-										// $apiSecret = "2c817fa94e5240af0f59bb31d4e89a8342905db75ae41f074f7ff2ba4ec6b0ac";
-										// $nonce = "7094329114131288000";
-
-										$serviceURL = 'https://api-cert.payeezy.com/v1';
-										$apikey = 'zAlVCVmGlA4TTvU8M6QQkZ0M4ol6ldws';
-										$token = 'c5a93da7fbbdd520';
-										$apisecret = '3361148989e27c2d690a2f5683f3865041db3e657431b8bd6a647afe13bc2065';
-										$hmac_enc = 'p5RgB7u~q03hok3t8t8kSo3UQxM3~Grm';
-
-										// $serviceURL = 'https://api-cert.payeezy.com/v1/transactions';
-										// $apikey = 'y6pWAJNyJyjGv66IsVuWnklkKUPFbb0a';
-										// $token = 'c5a93da7fbbdd520';
+										$serviceURL = 'https://api-cert.payeezy.com/v1/transactions';
+										$apikey = 'y6pWAJNyJyjGv66IsVuWnklkKUPFbb0a';
+										$token = 'fdoa-a480ce8951daa73262734cf102641994c1e55e7cdf4c02b6';
 										// $apisecret = '3361148989e27c2d690a2f5683f3865041db3e657431b8bd6a647afe13bc2065';
 										// $hmac_enc = 'p5RgB7u~q03hok3t8t8kSo3UQxM3~Grm';
-
+										$authorization= 'ODg4YWUyYjQyYWI4YzAzOGNmNWVjYzk0NGZhYTZjZDY5ZmJmMTQwOTExNTAzNzNhMjM0NzkzZjE4NWZjODRjNQ=='
 
 										list($usec, $sec) = explode(" ", microtime());
 										$timestamp = round(((float)$usec + (float)$sec) * 1000);
@@ -122,20 +112,12 @@
 										$headers = array(
 											'Content-type: application/json',
 											'token: fdoa-31313137a2ea512a73d0f440a2b049f7977cf2899d8f3729',
-											"Authorization: ".$hmac_enc,
+											"Authorization: ".$authorization,
 											"apikey: ".$apikey,
 											"token: ".$token,
 											"timestamp: ".$timestamp,
 											"nonce: ".$nonce,
 										);
-
-										// 'apikey: Kyv2tGF0nSVGKLTkHnjyrbwLwqhmpzSU',
-										//                                                 'token: fdoa-31313137a2ea512a73d0f440a2b049f7977cf2899d8f3729',
-										//                                                 'Content-type: application/json',
-										//                                                 'Authorization: '.$authorization.'',
-										//                                                 'nonce: d485155f279b2419',
-										//                                                 'timestamp: 2022-09-14T10:03:59Z' 
-
 
 										curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
