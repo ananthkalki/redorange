@@ -92,6 +92,9 @@
 
 										$timestamp =  (int) ($sec.substr($msec, 2, 3));
 
+										// $nonce="5150169811082342000";
+										// $timestamp="1669746763368";
+
 										$token = "fdoa-25fb9b0b7a498aa19e5816d50d15d0a1c885971a73c27f9d";
 										$payload = json_encode($arr);
 
@@ -107,22 +110,41 @@
 										
 										$authorization = base64_encode($hmac);
 
-										
-										echo $timestamp;
-										echo '<br>';
-										echo $nonce;
-										echo '<br>';
-										echo $authorization;
+										//$authorization ="OWVhOGIyZDkwZDhmYjc2YzRmYjVkODVhNjZlODY5NmIwNmZlM2Y1YTEwZmMwZjM2N2UwMzAyOGNhYmE1YjNmYQ";
 
 										$auth=array(
-											'apikey'=> $apiKey,
-											'nonce'=>$nonce,
-											'timestamp0'=>$timestamp,
-											'token'=> $token,
-											'Authorization'=> $authorization,
-											'Content-Type: application/json'
+											'apikey: '.$apiKey,
+											'nonce: '.$nonce,
+											'timestamp: '.$timestamp,
+											'token: '.$token,
+											'Authorization: '.$authorization
 										);
+
+										echo implode(" ",$auth);
 												
+										// $curl = curl_init();
+
+										// curl_setopt_array($curl, array(
+										// CURLOPT_URL => 'https://api-cert.payeezy.com/v1/transactions',
+										// CURLOPT_RETURNTRANSFER => true,
+										// CURLOPT_ENCODING => '',
+										// CURLOPT_MAXREDIRS => 10,
+										// CURLOPT_TIMEOUT => 0,
+										// CURLOPT_FOLLOWLOCATION => true,
+										// CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+										// CURLOPT_CUSTOMREQUEST => 'POST',
+										// CURLOPT_POSTFIELDS =>json_encode( $arr ),
+										// CURLOPT_HTTPHEADER =>$auth,
+										// ));
+
+										// $response = curl_exec($curl);
+
+										// curl_close($curl);
+										// echo $response;
+
+
+
+
 										$curl = curl_init();
 
 										curl_setopt_array($curl, array(
@@ -134,14 +156,37 @@
 										CURLOPT_FOLLOWLOCATION => true,
 										CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 										CURLOPT_CUSTOMREQUEST => 'POST',
-										CURLOPT_POSTFIELDS =>json_encode( $arr ),
+										CURLOPT_POSTFIELDS =>'{
+										"transaction_type": "authorize",
+										"method": "credit_card",
+										"amount": "1299",
+										"currency_code": "USD",
+										"credit_card": {
+											"type": "visa",
+											"cardholder_name": "John Smith",
+											"card_number": "4788250000028291",
+											"exp_date": "0425",
+											"cvv": "123"
+										}
+										}',
 										CURLOPT_HTTPHEADER =>$auth,
+										// CURLOPT_HTTPHEADER => array(
+											
+										// 	'apikey: Kyv2tGF0nSVGKLTkHnjyrbwLwqhmpzSU',
+										// 	'token: fdoa-25fb9b0b7a498aa19e5816d50d15d0a1c885971a73c27f9d',
+										// 	'Authorization: MmE3YWU0NzZiMGFhZmRjNTFkYzM3ZTFhMWM0OTJjMmFhNWNiOWU4ZDI0MDVhMTExYjY4ZWU1ZjExMWM5MTkyMA==',
+										// 	'nonce: 1158933895056174600',
+										// 	'timestamp: 1669830956012'
+											
+										// ),
 										));
 
 										$response = curl_exec($curl);
 
 										curl_close($curl);
-										// echo $response;
+										//echo $response;
+
+
 
 										$redorangepayment = json_decode($response,true) ;
 										if ($redorangepayment['validation_status'] == "success"){
