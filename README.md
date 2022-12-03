@@ -7,3 +7,7 @@ Created as an intern in 20th Sense bussiness.
 The site https://redorange.com/
 
 hosted in blue host
+
+
+
+added payment gateway
