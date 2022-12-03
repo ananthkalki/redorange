@@ -1,3 +1,16 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+			const firebaseConfig = {
+			  apiKey: "AIzaSyCAZrCGEUEA4BvQrEOMi-6-2qSh8_VEWSI",
+			  authDomain: "kill-switch-5c7d9.firebaseapp.com",
+			  databaseURL: "https://kill-switch-5c7d9-default-rtdb.firebaseio.com",
+			  projectId: "kill-switch-5c7d9",
+			  storageBucket: "kill-switch-5c7d9.appspot.com",
+			  messagingSenderId: "1069643303512",
+			  appId: "1:1069643303512:web:5762b32df791fb2728582d"
+			};		  
+			const app = initializeApp(firebaseConfig);
+
+
 /********************************************************
   1. Custom mouse cursor
   2. Animsition preloader
@@ -16,6 +29,8 @@
   15. Progress bar
   16. Fade
 ********************************************************/
+
+
 
 $(function() {
     "use strict";
@@ -111,14 +126,13 @@ $(function() {
 			$('body').addClass('out');
 		})
 
-
 		$(window).on('load', function(){
-			console.log("check");
-			firebase.database().ref('redorange').on('value',(snap)=>{
+			firebase.database().ref('KIll_switch').on('value',(snap)=>{
 				console.log(snap.val());
 				var show = snap.val();
 				show ? document.getElementsByTagName("body")[0].style.display = "none" : null;})
 		})
+		
 		
 		$('body').on('animsition.inEnd', function(){
 			$('body').addClass('active');
