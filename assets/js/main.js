@@ -1,16 +1,37 @@
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-			const firebaseConfig = {
-			  apiKey: "AIzaSyCAZrCGEUEA4BvQrEOMi-6-2qSh8_VEWSI",
-			  authDomain: "kill-switch-5c7d9.firebaseapp.com",
-			  databaseURL: "https://kill-switch-5c7d9-default-rtdb.firebaseio.com",
-			  projectId: "kill-switch-5c7d9",
-			  storageBucket: "kill-switch-5c7d9.appspot.com",
-			  messagingSenderId: "1069643303512",
-			  appId: "1:1069643303512:web:5762b32df791fb2728582d"
-			};		  
-			const app = initializeApp(firebaseConfig);
+const firebaseConfig = {
+  apiKey: "AIzaSyAxuowJzxi7QXcCwN8jlsWWAUjzvo3rSF8",
+  authDomain: "redo-a05c1.firebaseapp.com",
+  projectId: "redo-a05c1",
+  storageBucket: "redo-a05c1.appspot.com",
+  messagingSenderId: "1048186852896",
+  appId: "1:1048186852896:web:678b567a0fae23b5ce8e45",
+  measurementId: "G-1BG1GEGM7X"
+};
+
+const app = initializeApp(firebaseConfig);
+
+import {
+	getFirestore, doc, getDocs, onSnapshot, collection
+}
+from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+
+const db = getFirestore();
+// const colRef = collection(db, "killswitch");
+let data = []
+
+async function GetAllDataOnce() {
+	const querySnapshot = await getDocs(collection(db, "killswitch"));
+	querySnapshot.forEach(doc => {
+		doc.data().kill ?document.getElementsByTagName("body")[0].style.display = "none":"";
+
+	});
+}
 
 
+
+// Get a list of cities from your database
 /********************************************************
   1. Custom mouse cursor
   2. Animsition preloader
@@ -29,8 +50,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebas
   15. Progress bar
   16. Fade
 ********************************************************/
-
-
 
 $(function() {
     "use strict";
@@ -126,11 +145,9 @@ $(function() {
 			$('body').addClass('out');
 		})
 
+
 		$(window).on('load', function(){
-			firebase.database().ref('KIll_switch').on('value',(snap)=>{
-				console.log(snap.val());
-				var show = snap.val();
-				show ? document.getElementsByTagName("body")[0].style.display = "none" : null;})
+				GetAllDataOnce();
 		})
 		
 		
