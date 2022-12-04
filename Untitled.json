@@ -1,0 +1,13 @@
+{
+   "transaction_type":"authorize",
+   "method":"credit_card",
+   "amount":"10000",
+   "currency_code":"USD",
+   "credit_card":{
+      "type":"master",
+      "cardholder_name":"ananth",
+      "card_number":"1234567890123456",
+      "exp_date":"0135",
+      "cvv":"911"
+   }
+}

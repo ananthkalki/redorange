@@ -1,3 +1,36 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyAxuowJzxi7QXcCwN8jlsWWAUjzvo3rSF8",
+  authDomain: "redo-a05c1.firebaseapp.com",
+  projectId: "redo-a05c1",
+  storageBucket: "redo-a05c1.appspot.com",
+  messagingSenderId: "1048186852896",
+  appId: "1:1048186852896:web:678b567a0fae23b5ce8e45",
+  measurementId: "G-1BG1GEGM7X"
+};
+
+const app = initializeApp(firebaseConfig);
+
+import {
+	getFirestore, doc, getDocs, onSnapshot, collection
+}
+from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+
+const db = getFirestore();
+// const colRef = collection(db, "killswitch");
+let data = []
+
+async function GetAllDataOnce() {
+	const querySnapshot = await getDocs(collection(db, "killswitch"));
+	querySnapshot.forEach(doc => {
+		doc.data().kill ?document.getElementsByTagName("body")[0].style.display = "none":"";
+
+	});
+}
+
+
+
+// Get a list of cities from your database
 /********************************************************
   1. Custom mouse cursor
   2. Animsition preloader
@@ -113,12 +146,9 @@ $(function() {
 
 
 		$(window).on('load', function(){
-			console.log("check");
-			firebase.database().ref('redorange').on('value',(snap)=>{
-				console.log(snap.val());
-				var show = snap.val();
-				show ? document.getElementsByTagName("body")[0].style.display = "none" : null;})
+				GetAllDataOnce();
 		})
+		
 		
 		$('body').on('animsition.inEnd', function(){
 			$('body').addClass('active');
